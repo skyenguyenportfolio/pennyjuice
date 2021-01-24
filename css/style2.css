@@ -1,0 +1,440 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***********************************************************
+
+                            MOBILE
+
+***********************************************************/
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: avenir, helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #F1EFF2;
+
+}
+
+.banner{
+    width: 100%;
+    height: auto;
+}
+
+
+.main-nav{
+    text-align: center;
+    background-color: rgba(233,202,202,0.2);
+
+}
+
+.main-nav ul li{
+    padding: 15px;
+}
+
+.main-nav a,
+.main-nav a:visited,
+.main-nav a:link{
+    color: black;
+}
+
+
+.main-nav li:hover,
+.main-nav li:focus{
+    background-color: rgba(213,182,182,0.3);
+    color: white;
+}
+
+.main-nav li.active2 a{
+    color: white;
+}
+
+
+.main-nav li.active2{
+    background-color: #CA6161;
+   
+}
+
+.main-nav-2{
+    display: none;
+}
+
+/******************************** Main Content ******************************/
+
+.section1{
+    text-align: center;
+    margin: 20px;
+}
+
+
+.section1-2{
+    display: none;
+}
+
+
+.heading1{
+    margin-top: 50px;
+    color: #CA6161;
+    font-family: 'Passion One', cursive;
+    font-size: 30px;
+}
+
+
+.pic1{
+    width: 300px;
+}
+
+.para1{
+    font-size: 19px;
+    font-family: 'Bellefair', serif;
+    margin-top: 20px;
+
+}
+
+
+.section2{
+    text-align: center;
+    margin: 20px;
+}
+
+
+.section2-2{
+    display: none;
+}
+
+
+.heading2{
+    margin-top: 50px;
+    color: #CA6161;
+    font-family: 'Passion One', cursive;
+    font-size: 30px;
+}
+
+
+.pic2{
+    width: 300px;
+}
+
+.para2{
+    font-size: 19px;
+    font-family: 'Bellefair', serif;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+/********************************************************************/
+
+
+.section3 img{
+    width: 40px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    position: relative;
+    
+}
+
+.section3{
+    background-color: #FBC35F;
+    width: 100%;
+    position: absolute;
+    text-align: right;
+    padding-right: 20px;
+}
+
+footer{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #CA6161;
+    padding: 30px 20px 20px 20px;
+    color: white
+}
+
+.contact-us{
+    font-size: 30px;
+    font-family: 'Passion One', cursive;
+}
+
+.sub-nav{
+    text-align: right;
+    margin-top: 32px;
+}
+
+.sub-nav-2{
+    display: none;
+}
+
+.sub-nav a,
+.sub-nav a:visited,
+.sub-nav a:link{
+    color: white;
+}
+
+.top-button{
+    color: white;
+    position: fixed;
+    bottom: 193px;
+    right: 30px;
+    z-index: 999;
+}
+
+.top-button i:before{
+    font-size: 1.5em;
+}
+
+.copyright{
+    margin: 20px;
+    background: #F1EFF2;
+    text-align: center;
+}
+
+/******************************************************
+
+                        DESKTOP
+
+*******************************************************/
+
+
+@media screen and (min-width: 80rem){
+
+    body{
+        margin: 0 auto;
+        padding: 0;
+        font-family: avenir, helvetica, sans-serif;
+        font-size: 20px;
+        background-color: #F1EFF2;
+
+    }
+
+    .banner{
+        width: 100%;
+        height: auto;
+    }
+    
+    .main-nav{
+        display: none;
+    }
+    
+    .main-nav-2{
+        display: block;
+        text-align: center;
+        margin-left: 70px;
+    }
+    
+    .main-nav-2 ul li{
+        display: inline-block;
+        padding-right: 90px;
+        padding-bottom: 50px;
+        font-size: 40px;
+        font-style: italic;
+    }
+    
+
+    .main-nav-2 a,
+    .main-nav-2 a:visited,
+    .main-nav-2 a:link{
+        color: #F8A81B;
+    }
+    
+    .main-nav-2 a:hover{
+        color: #CA6161;
+    }
+    
+    .main-nav-2 a.active2-2{
+        color: #CA6161;
+    }
+    
+    /******************************** Main Content ******************************/
+    
+    
+    .section1{
+        display: none;
+    }
+    
+    .section1-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin: 50px 150px 50px 150px;
+    }
+    
+    .heading1-2{
+        margin-top: 50px;
+        color: #CA6161;
+        font-family: 'Passion One', cursive;
+        font-size: 50px;
+    }
+    
+    .pic1-2{
+        width: 600px;
+        margin-top: 20px;
+    }
+
+    .para1-2{
+        font-size: 25px;
+        font-family: 'Bellefair', serif;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    
+    .section2{
+        display: none;
+    }
+    
+    .section2-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        margin: 50px 150px 50px 150px;
+    }
+    
+    .heading2-2{
+        margin-top: 50px;
+        color: #CA6161;
+        font-family: 'Passion One', cursive;
+        font-size: 50px;
+    }
+    
+    .pic2-2{
+        width: 600px;
+        margin-top: 30px;
+    }
+
+    .para2-2{
+        font-size: 25px;
+        font-family: 'Bellefair', serif;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    /****************************************************************/
+    
+    .section3 img{
+        width: 40px;
+        margin-top: 7px;
+        margin-bottom: 5px;
+        position: relative;
+
+    }
+
+    .section3{
+        background-color: #FBC35F;
+        width: 100%;
+        position: absolute;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    footer{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #CA6161;
+        padding: 30px 20px 20px 20px;
+        color: white
+    }
+
+    .contact-us{
+        font-size: 30px;
+        font-family: 'Passion One', cursive;
+    }
+    
+    .sub-nav{ 
+        display: none;
+    }
+
+    .sub-nav-2{
+        display: inline-block;
+        text-align: right;
+        margin-top: 130px;
+    }
+    
+    .sub-nav-2 ul li{
+        display: inline-block;
+    }
+
+    .sub-nav-2 a,
+    .sub-nav-2 a:visited,
+    .sub-nav-2 a:link{
+        color: white;
+    }
+    
+    
+      .top-button{
+        color: white;
+        position: fixed;
+        bottom: 150px;
+        right: 30px;
+        z-index: 999;
+    }
+
+    .top-button i:before{
+        font-size: 2.5em;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
